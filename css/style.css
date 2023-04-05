@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-size: 18px;
     font-family: 'Outfit', sans-serif;
-    color: hsl(214, 17%, 39%);
+    color: #A9A297;
 }
 
 body {
@@ -36,6 +36,27 @@ section {
     overflow: hidden;
 }
 
+.overlay-img {
+    position: absolute;
+    width: 340px;
+    height: 310px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: hsla(178, 100%, 50%, .5);
+    background-image: url(../images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 205px;
+    z-index: 99;
+    opacity: 0;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.overlay-img:hover {
+    opacity: 1;
+}
+
 .hero-img img {
     width: 340px;
     height: 310px;
@@ -45,6 +66,12 @@ h1 {
     font-size: 28px;
     color: white;
     margin: 20px 0;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+    transition: .5s;
 }
 
 .details p {
@@ -54,6 +81,7 @@ h1 {
 
 .ETH {
     color: hsl(178, 100%, 50%);
+    font-weight: bold;
 }
 
 .time {
@@ -85,6 +113,12 @@ footer {
     left: 15px;
 }
 
-footer p .name {
+.name {
     color: white;
+    transition: .5s;
+}
+
+.name:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
 }
