@@ -46,7 +46,7 @@ section {
     background-image: url(../images/icon-view.svg);
     background-repeat: no-repeat;
     background-position: center;
-    top: 205px;
+    transform: translateY(-310px);
     z-index: 99;
     opacity: 0;
     transition: .7s;
